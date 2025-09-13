@@ -1,0 +1,302 @@
+
+/* estilos básicos e preferências do usuário */
+* {
+    box-sizing: border-box;
+    font-family: system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(to right,#f2e0d2, #e2c5ae);
+    color: #222;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 16px;
+    padding: 18px;
+    background-color:transparent;
+}
+.dol {
+    width: 20%;
+    vertical-align: middle;
+}
+
+h1 { font-family: 'Chewy', serif;
+    grid-column: 1 / -1;
+    text-transform: none;
+    margin: 0 0 8px 0;
+    font-size: 4rem;
+    color:#426BC2;
+}
+
+.card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* efeito de destaque ao passar o mouse */
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* títulos dentro do card */
+.card h2 {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 1.15rem;
+    margin-bottom: 12px;
+    color: #3e5381; 
+    font-weight: 1000;
+}
+.icone-moeda {
+    width: 14px; /* Largura */
+    height: 14px; /* Altura */
+    /* Outros estilos, como alinhamento, se necessário */
+}
+
+/* texto padrão */
+.card p {
+    font-size: 1rem;
+    color: #475569;
+    line-height: 1.5;
+}
+
+
+.form input {
+    padding: 10px;
+    margin-right: 8px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.form button[type="submit"] {
+    padding: 10px 16px;
+    border-radius: 8px;
+    border: none;
+    background: #426BC2;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.form button[type="submit"]:hover {
+    background: #1d4ed8;
+}
+
+.sim-controls {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.sim-controls button {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background: #fff;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.sim-controls button:hover {
+    background: #f3f4f6;
+}
+
+.saldo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#saldo {
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 10px;
+    color: #059669;
+}
+
+.historico ul {
+    list-style: none;
+    padding: 0;
+    margin: 12px 0;
+    max-height: 400px;
+    overflow: auto;
+}
+
+.historico li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 12px;
+    border-bottom: 1px solid #eee;
+    transition: background 0.2s;
+}
+
+.historico li:hover {
+    background: #f9fafb;
+}
+
+.canvas-wrap {
+    margin-top: 15px;
+}
+
+/* Botões de seleção de tipo */
+.tipo-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.tipo-btn {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background: #f8fafc;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.tipo-btn.receita {
+    color: #059669;
+    border-color: #059669;
+}
+
+.tipo-btn.despesa {
+    color: #d24f74;
+    border-color:  #F2678E;
+}
+
+.tipo-btn.active {
+    background: #2563eb;
+    color: white;
+    border-color: #2563eb;
+}
+
+.tipo-btn.receita.active {
+    background: #BADD7F;
+    border-color: #BADD7F;
+}
+
+.tipo-btn.despesa.active {
+    background: #D67281;
+    border-color: #D56989;
+}
+
+.splash-screen {
+    position: fixed;
+    top: 0;
+    left: 10;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right,#f2e0d2,#426BC2);
+    background-size: 400% 400%;
+    animation: gradientFlow 0.5s ease infinite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: opacity 0.5s ease-out;
+    shape-outside: #4b5563;
+
+}
+
+
+.splash-screen p {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #4b5563;
+}
+
+.splash-screen.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#coin {
+    width: 10%;
+    height: 10%;
+    object-fit: contain;
+    margin: auto;
+}
+.boas-vindas {
+    grid-column: 1 / -1; /* ocupar toda a largura */
+    text-align: center;
+    background: transparent;
+    box-shadow: none;
+}
+
+
+.boas-vindas:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+
+/* Responsividade */
+@media (max-width: 900px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+    
+    .form input {
+        margin-right: 0;
+        width: 100%;
+    }
+    
+    .sim-controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Adiciona um espaço entre os botões */
+    margin-top: 20px; /* Adiciona um espaço acima, para não ficar colado no formulário */
+}
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 12px;
+        gap: 12px;
+    }
+    
+    .card {
+        padding: 12px;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    .tipo-buttons {
+        flex-direction: grid;
+    }
+}
+@keyframes gradientFlow {
+    0% {
+        background-position: 0% 15% 0%;
+    }
+    50% {
+        background-position: 25% 50%;
+    }
+    100% {
+        background-position: 0% 15%;
+    }
+}
