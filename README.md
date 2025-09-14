@@ -9,17 +9,6 @@ Desenvolvido com **HTML, CSS e JavaScript**, com suporte a **PWA (Progressive We
   <img src="https://github.com/dbrhbraga/bufunfa_app/blob/main/coin/simulacao.gif" width="150" />
 </p>
 
----
-
-## 📌 Índice
-
-- [Funcionalidades](#-funcionalidades)  
-- [Tecnologias](#-tecnologias)  
-- [Instalação](#-instalação)  
-- [Uso](#-uso)  
-- [Contribuindo](#-contribuindo)  
-- [Licença](#-licença)  
-- [Contato](#-contato)  
 
 ---
 
