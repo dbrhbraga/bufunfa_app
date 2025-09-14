@@ -2,9 +2,9 @@ const CACHE_NAME = "meu-app-v1";
 const urlsToCache = [
   "/",
   "/index.html",
-  "/style.css",
-  "/app.js",
-  "/manifest.json"
+  "docs/style.css",
+  "docs/app.js",
+  "docs/manifest.json"
 ];
 
 // instalar service worker
@@ -37,3 +37,4 @@ self.addEventListener("fetch", event => {
     })
   );
 });
+
