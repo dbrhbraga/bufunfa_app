@@ -51,7 +51,7 @@ function stopCoinAnimation() {
     }
 }
 
-// Configurar botões de tipo
+// botões de tipo
 tipoButtons.forEach(btn => {
     btn.addEventListener('click', () => {
         // Remover a classe active de todos os botões
@@ -160,7 +160,7 @@ function renderGraficos() {
             }
         });
     } else {
-        // Se não houver despesas, destrua o gráfico ou mostre uma mensagem
+        // Se não houver despesas
         ctxCategorias.clearRect(0, 0, ctxCategorias.canvas.width, ctxCategorias.canvas.height);
     }
 
@@ -259,7 +259,7 @@ btnSimular.addEventListener('click', () => {
         saveState();
         render();
         i++;
-    }, 600); // Adiciona a cada 600ms para efeito visual
+    }, 600); // Adiciona tempo para efeito visual
 });
 
 // Limpar dados
