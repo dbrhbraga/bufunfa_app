@@ -50,3 +50,15 @@ Desenvolvido com **HTML, CSS e JavaScript**, com suporte a **PWA (Progressive We
    ```bash
    git clone https://github.com/dbrhbraga/bufunfa_app.git
    cd bufunfa_app
+
+
+2. Instale as dependências  
+   ```bash
+   npm install
+
+
+3. Execute em servidor local (necessário para testar o Service Worker)
+   ```bash
+    npm start
+    ou abra index.html em seu navegador.
+
