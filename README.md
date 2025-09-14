@@ -6,7 +6,7 @@ Desenvolvido com **HTML, CSS e JavaScript**, com suporte a **PWA (Progressive We
 
 
 <p align="center">
-  <img src="https://github.com/dbrhbraga/bufunfa_app/blob/main/coin/gif.gif" width="250" />
+  <img src="https://github.com/dbrhbraga/bufunfa_app/blob/main/coin/simulacao.gif" width="250" />
 </p>
 
 ---
